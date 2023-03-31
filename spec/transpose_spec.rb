@@ -8,7 +8,7 @@ describe "transpose" do
 end
 
     it "raise an error if not a 2D array" do
-        expect(transpose(array)).to raise_error ("Invalid Array")
+        expect{ transpose([1,2,3]) }.to raise_error ("Invalid Array")
     end
 
 end
